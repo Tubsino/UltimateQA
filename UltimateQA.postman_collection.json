@@ -1,0 +1,211 @@
+{
+	"info": {
+		"_postman_id": "8c230941-4244-4ac9-b28c-5cfbf267e01e",
+		"name": "UltimateQA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11360983"
+	},
+	"item": [
+		{
+			"name": "LandingPage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Base}}/j?dtstmp=1706145454885&se=e30&duid=6c155cba25a1--01hmksg51tmxjgd1hex9vpvxgs&tv=v2.12.0&pu=https%3A%2F%2Fultimateqa.com%2Fautomation&wpn=lc-bundle&cd=.ultimateqa.com",
+					"host": [
+						"{{Base}}"
+					],
+					"path": [
+						"j"
+					],
+					"query": [
+						{
+							"key": "dtstmp",
+							"value": "1706145454885"
+						},
+						{
+							"key": "se",
+							"value": "e30"
+						},
+						{
+							"key": "duid",
+							"value": "6c155cba25a1--01hmksg51tmxjgd1hex9vpvxgs"
+						},
+						{
+							"key": "tv",
+							"value": "v2.12.0"
+						},
+						{
+							"key": "pu",
+							"value": "https%3A%2F%2Fultimateqa.com%2Fautomation"
+						},
+						{
+							"key": "wpn",
+							"value": "lc-bundle"
+						},
+						{
+							"key": "cd",
+							"value": ".ultimateqa.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Homepage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Base1}}/automation",
+					"host": [
+						"{{Base1}}"
+					],
+					"path": [
+						"automation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SDET_Training",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{redi}}/academy-coming-soon",
+					"host": [
+						"{{redi}}"
+					],
+					"path": [
+						"academy-coming-soon"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Blog",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Base1}}/blog/",
+					"host": [
+						"{{Base1}}"
+					],
+					"path": [
+						"blog",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BlogPage2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Base}}/j?dtstmp=1706147139281&se=e30&duid=6c155cba25a1--01hmksg51tmxjgd1hex9vpvxgs&tv=v2.12.0&pu=https://ultimateqa.com/blog/&wpn=lc-bundle&refr=https://ultimateqa.com/automation&cd=.ultimateqa.com",
+					"host": [
+						"{{Base}}"
+					],
+					"path": [
+						"j"
+					],
+					"query": [
+						{
+							"key": "dtstmp",
+							"value": "1706147139281"
+						},
+						{
+							"key": "se",
+							"value": "e30"
+						},
+						{
+							"key": "duid",
+							"value": "6c155cba25a1--01hmksg51tmxjgd1hex9vpvxgs"
+						},
+						{
+							"key": "tv",
+							"value": "v2.12.0"
+						},
+						{
+							"key": "pu",
+							"value": "https://ultimateqa.com/blog/"
+						},
+						{
+							"key": "wpn",
+							"value": "lc-bundle"
+						},
+						{
+							"key": "refr",
+							"value": "https://ultimateqa.com/automation"
+						},
+						{
+							"key": "cd",
+							"value": ".ultimateqa.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Success_stories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Base}}/j?dtstmp=1706147581801&se=e30&duid=6c155cba25a1--01hmksg51tmxjgd1hex9vpvxgs&tv=v2.12.0&pu=https://ultimateqa.com/testimonials/&wpn=lc-bundle&refr=https://ultimateqa.com/blog/&cd=.ultimateqa.com",
+					"host": [
+						"{{Base}}"
+					],
+					"path": [
+						"j"
+					],
+					"query": [
+						{
+							"key": "dtstmp",
+							"value": "1706147581801"
+						},
+						{
+							"key": "se",
+							"value": "e30"
+						},
+						{
+							"key": "duid",
+							"value": "6c155cba25a1--01hmksg51tmxjgd1hex9vpvxgs"
+						},
+						{
+							"key": "tv",
+							"value": "v2.12.0"
+						},
+						{
+							"key": "pu",
+							"value": "https://ultimateqa.com/testimonials/"
+						},
+						{
+							"key": "wpn",
+							"value": "lc-bundle"
+						},
+						{
+							"key": "refr",
+							"value": "https://ultimateqa.com/blog/"
+						},
+						{
+							"key": "cd",
+							"value": ".ultimateqa.com"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
