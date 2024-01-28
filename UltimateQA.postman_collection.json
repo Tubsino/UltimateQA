@@ -8,6 +8,32 @@
 	"item": [
 		{
 			"name": "LandingPage",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Validate status code 200 Ok', function () {\r",
+							"    pm.expect(pm.response.code).to.eq(200);\r",
+							"})\r",
+							"\r",
+							"pm.test('Validate that the value of baker in the response body', function () {\r",
+							"    var responseJSON = pm.response.json();\r",
+							"    pm.expect(responseJSON).to.be.an('object');\r",
+							"    pm.expect(responseJSON.bakers).to.exist.and.to.be.an('array');\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Validate that the value of baker is null\", function(){\r",
+							"    var responseJSON = pm.response.json();\r",
+							"    pm.expect(responseJSON.bakers).to.be.empty;\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -55,6 +81,25 @@
 		},
 		{
 			"name": "Homepage",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Validate that the response code is 200\", function(){\r",
+							"    pm.expect(pm.response.code).to.eq(200)\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"Validate that response body is present\", function(){\r",
+							"    pm.response.to.have.body();\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -72,6 +117,24 @@
 		},
 		{
 			"name": "SDET_Training",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Validate that the response code is 200\", function(){\r",
+							"    pm.expect(pm.response.code).to.eq(200)\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"Validate that response body is present\", function(){\r",
+							"    pm.response.to.have.body();\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -89,6 +152,24 @@
 		},
 		{
 			"name": "Blog",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Validate that the response code is 200\", function(){\r",
+							"    pm.expect(pm.response.code).to.eq(200)\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"Validate that response body is present\", function(){\r",
+							"    pm.response.to.have.body();\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -107,6 +188,30 @@
 		},
 		{
 			"name": "BlogPage2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Validate status code 200 Ok', function () {\r",
+							"    pm.expect(pm.response.code).to.eq(200);\r",
+							"})\r",
+							"\r",
+							"pm.test('Validate that the value of baker in the response body', function () {\r",
+							"    var responseJSON = pm.response.json();\r",
+							"    pm.expect(responseJSON).to.be.an('object');\r",
+							"    pm.expect(responseJSON.bakers).to.exist.and.to.be.an('array');\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Validate that the value of baker is null\", function(){\r",
+							"    var responseJSON = pm.response.json();\r",
+							"    pm.expect(responseJSON.bakers).to.be.empty;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -158,6 +263,30 @@
 		},
 		{
 			"name": "Success_stories",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Validate status code 200 Ok', function () {\r",
+							"    pm.expect(pm.response.code).to.eq(200);\r",
+							"})\r",
+							"\r",
+							"pm.test('Validate that the value of baker in the response body', function () {\r",
+							"    var responseJSON = pm.response.json();\r",
+							"    pm.expect(responseJSON).to.be.an('object');\r",
+							"    pm.expect(responseJSON.bakers).to.exist.and.to.be.an('array');\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Validate that the value of baker is null\", function(){\r",
+							"    var responseJSON = pm.response.json();\r",
+							"    pm.expect(responseJSON.bakers).to.be.empty;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
